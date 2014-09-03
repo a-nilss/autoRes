@@ -24,7 +24,7 @@
 </td>
 <td class="title">
 <h1>Lytx.Automation.Arc</h1>
-<h3>2014-09-02 11:21:18</h3>
+<h3>2014-09-03 11:12:34</h3>
 </td>
   <td class=noborder>&nbsp;</td>
 </tr>
@@ -43,11 +43,11 @@
   <td>0</td>
   <td>0</td>
 </tr>
-<tr>
+<tr class="failure-row">
   <td class=name>LoginFailed</td>
   <td>1</td>
   <td>0</td>
-  <td>0</td>
+  <td>1</td>
 </tr>
 <tr class="failure-row">
   <td class=name>LogOutRemovesAuthenticationToken</td>
@@ -55,17 +55,17 @@
   <td>0</td>
   <td>1</td>
 </tr>
-<tr>
+<tr class="failure-row">
   <td class=name>ObfuscatedPassword</td>
   <td>1</td>
   <td>0</td>
-  <td>0</td>
+  <td>1</td>
 </tr>
 <tr class="total-row">
   <td class=name>Total</td>
   <td>4</td>
   <td>0</td>
-  <td>1</td>
+  <td>3</td>
 </tr>
 </table>
 <p>&nbsp;</p>
@@ -75,14 +75,15 @@
 </tr>
 <tr>
   <td>1</td>
-  <td class=text>LogOutRemovesAuthenticationToken.V1_LogOutRemovesAuthenticationTokenTest<br>[V1_LogOutRemovesAuthenticationTokenTest] Enter the path to the coach page directly in the browser, and verify that the coach page is not displayed  : [V1_LogOutRemovesAuthenticationTokenTest] Enter the path to the coach page directly in the browser, and verify that the coach page is not displayed  : NUnit.Framework.AssertionException:   Element /assets/images/coach.png was found. Expected null.
-  Expected: True
-  But was:  False
-
-   at NUnit.Framework.Assert.That(Object actual, IResolveConstraint expression, String message, Object[] args)
-   at NUnit.Framework.Assert.IsTrue(Boolean condition, String message)
-   at Lytx.Automation.Framework.LogAssert.&lt;&gt;c__DisplayClass4.&lt;IsTrue&gt;b__3() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 39
-   at Lytx.Automation.Framework.LogAssert.Try(Action test) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 20<pre>at Lytx.Automation.Framework.LogAssert.Fail(String message) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 73at Lytx.Automation.Framework.Logger.Error(String message, String memberName) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Logger.cs:line 65at Lytx.Automation.Framework.LogAssert.Try(Action test) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 28at Lytx.Automation.Framework.LogAssert.IsTrue(Boolean condition, String message) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 39at Lytx.Automation.Framework.HtmlPageController.verifyElementNotExists(String locator) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Controllers\HtmlPageController.cs:line 286at Lytx.Automation.Arc.Features.LoginFeature.verifyAuthenticationTokenRemoved() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\Features\LoginFeature.cs:line 65at Lytx.Automation.Arc.DevTests.LogOutRemovesAuthenticationToken.V1_LogOutRemovesAuthenticationTokenTest() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\DevTests\LogOutRemovesAuthenticationToken.cs:line 24</pre></td>
+  <td class=text>LoginFailed.V1_LoginFailedTest<br>OpenQA.Selenium.NoAlertPresentException : No alert is present<pre>at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)at OpenQA.Selenium.Remote.RemoteTargetLocator.Alert()at Lytx.Automation.Framework.HtmlPageController.ngVerifyAlertText(String expectedText) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Controllers\HtmlPageController.cs:line 1532at Lytx.Automation.Arc.DevTests.LoginFailed.V1_LoginFailedTest() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\DevTests\LoginFailed.cs:line 17</pre></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td class=text>LogOutRemovesAuthenticationToken.V1_LogOutRemovesAuthenticationTokenTest<br>[setUpTest] Initializing Controllers [V1_LogOutRemovesAuthenticationTokenTest] Login using the valid user  : Object reference not set to an instance of an object.<pre>at Lytx.Automation.Framework.LogAssert.Fail(String message) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 73at Lytx.Automation.Framework.Logger.Error(String message, Exception ex, String memberName) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Logger.cs:line 73at WebExtensions.WebElementExtensions.NgFindElements(NgWebDriver driver, By by) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\WebElementExtensions.cs:line 138at Lytx.Automation.Framework.HtmlPageController.ngEnterText(String tagName, String attributeName, String attributeValue, String text) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Controllers\HtmlPageController.cs:line 1425at Lytx.Automation.Arc.Features.LoginFeature.adminLogin() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\Features\LoginFeature.cs:line 13at Lytx.Automation.Arc.DevTests.LogOutRemovesAuthenticationToken.V1_LogOutRemovesAuthenticationTokenTest() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\DevTests\LogOutRemovesAuthenticationToken.cs:line 15</pre></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td class=text>ObfuscatedPassword.V1_ObfuscatedPasswwordTest<br>[setUpTest] Initializing Controllers [V1_ObfuscatedPasswwordTest] Enter text in password field  : Object reference not set to an instance of an object.<pre>at Lytx.Automation.Framework.LogAssert.Fail(String message) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 73at Lytx.Automation.Framework.Logger.Error(String message, Exception ex, String memberName) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Logger.cs:line 73at WebExtensions.WebElementExtensions.NgFindElements(NgWebDriver driver, By by) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\WebElementExtensions.cs:line 138at Lytx.Automation.Framework.HtmlPageController.ngEnterText(String tagName, String attributeName, String attributeValue, String text) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Controllers\HtmlPageController.cs:line 1425at Lytx.Automation.Arc.DevTests.ObfuscatedPassword.V1_ObfuscatedPasswwordTest() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\DevTests\ObfuscatedPassword.cs:line 14</pre></td>
 </tr>
 </table>
 <p>&nbsp;</p>
