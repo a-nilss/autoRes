@@ -24,7 +24,7 @@
 </td>
 <td class="title">
 <h1>Lytx.Automation.Arc</h1>
-<h3>2014-09-05 08:52:54</h3>
+<h3>2014-09-10 11:31:53</h3>
 </td>
   <td class=noborder>&nbsp;</td>
 </tr>
@@ -38,40 +38,63 @@
   <th>Failures</th>
 </tr>
 <tr>
-  <td class=name>AdminLogin</td>
+  <td class=name>DE4321_HardRefresh</td>
   <td>1</td>
   <td>0</td>
   <td>0</td>
 </tr>
 <tr>
-  <td class=name>BusyIndicator</td>
+  <td class=name>DE4372_LogOutRemovesAuthenticationToken</td>
   <td>1</td>
   <td>0</td>
   <td>0</td>
 </tr>
 <tr>
-  <td class=name>LoginFailed</td>
+  <td class=name>DE4416_LoginFailed</td>
   <td>1</td>
   <td>0</td>
   <td>0</td>
 </tr>
 <tr>
-  <td class=name>LogOutRemovesAuthenticationToken</td>
+  <td class=name>US10013_ObfuscatedPassword</td>
   <td>1</td>
   <td>0</td>
   <td>0</td>
 </tr>
 <tr>
-  <td class=name>ObfuscatedPassword</td>
+  <td class=name>US10246_BusyIndicator</td>
   <td>1</td>
   <td>0</td>
   <td>0</td>
+</tr>
+<tr class="failure-row">
+  <td class=name>US9858_AdminLogin</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
 </tr>
 <tr class="total-row">
   <td class=name>Total</td>
-  <td>5</td>
+  <td>6</td>
   <td>0</td>
-  <td>0</td>
+  <td>1</td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<table class=center>
+<tr class="failure-row">
+  <th colspan=2>Failures</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td class=text>US9858_AdminLogin.V1_US9858_AdminLoginSuccessTest<br>[V1_US9858_AdminLoginSuccessTest] Verify that the admin user can select a different company  : [V1_US9858_AdminLoginSuccessTest] Verify that the admin user can select a different company  : NUnit.Framework.AssertionException:   Unable to find element with text 'Elek-Tek'
+  Expected: True
+  But was:  False
+
+   at NUnit.Framework.Assert.That(Object actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.IsTrue(Boolean condition, String message)
+   at Lytx.Automation.Framework.LogAssert.&lt;&gt;c__DisplayClass4.&lt;IsTrue&gt;b__3() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 39
+   at Lytx.Automation.Framework.LogAssert.Try(Action test) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 20<pre>at Lytx.Automation.Framework.LogAssert.Fail(String message) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 73at Lytx.Automation.Framework.Logger.Error(String message, String memberName) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Logger.cs:line 65at Lytx.Automation.Framework.LogAssert.Try(Action test) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 28at Lytx.Automation.Framework.LogAssert.IsTrue(Boolean condition, String message) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\LogAssert.cs:line 39at Lytx.Automation.Framework.HtmlPageController.ngVerifyText(String tagName, String expectedText) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Framework\Lytx.Automation.Framework\Controllers\HtmlPageController.cs:line 1533at Lytx.Automation.Arc.Features.LoginFeature.verifySelectCompany(List`1 companyList) in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\Features\LoginFeature.cs:line 84at Lytx.Automation.Arc.DevTests.US9858_AdminLogin.V1_US9858_AdminLoginSuccessTest() in c:\Projects\HindSightServices\2013Q2\TestAutomation\Lytx.Automation.Arc\Lytx.Automation.Arc\DevTests\US9858_AdminLogin.cs:line 28</pre></td>
 </tr>
 </table>
 <p>&nbsp;</p>
