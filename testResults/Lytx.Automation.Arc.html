@@ -20,19 +20,12 @@
 <head>
 <script type="text/javascript">
 function postProcess() {
-if(document.getElementsByClassName("failure-row").length > 0){
-elements = document.getElementsByClassName("failure-row");
-for (var i = 0; i < elements.length; i++) {
-elements[i].style.background = "#E65050";}
-headerRow = document.getElementsByClassName("hdr-row");
-headerRow[0].style.background = "#B2B2CC";
-totalRow = document.getElementsByClassName("total-row");
-totalRow[0].style.background = "#B2B2CC";
-} else {
-headerRow = document.getElementsByClassName("hdr-row");
-headerRow[0].style.background = "#2EB82E";
-totalRow = document.getElementsByClassName("total-row");
-totalRow[0].style.background = "#2EB82E";}}
+var total = parseInt(document.getElementById("total").innerHTML);
+var failures = parseInt(document.getElementById("failures").innerHTML);
+if(total-failures == total) {document.getElementById("hdr-row").style.background = "#00FF00";document.getElementById("total-row").style.background = "#00FF00";}
+if(total-failures == 0) {document.getElementById("hdr-row").style.background = "#FF2B75";document.getElementById("total-row").style.background = "#FF0000";}
+if(total-failures > 0 && total-failures < total) {document.getElementById("hdr-row").style.background = "#FFFF00";document.getElementById("total-row").style.background = "#FFFF00";}
+}
 </script>
 </head>
 <table width=90% class="center">
@@ -42,14 +35,14 @@ totalRow[0].style.background = "#2EB82E";}}
 </td>
 <td class="title">
 <h1>Lytx.Automation.Arc</h1>
-<h3>2014-09-15 15:29:57</h3>
+<h3>2014-09-17 10:04:23</h3>
 </td>
   <td class=noborder>&nbsp;</td>
 </tr>
 </table>
 <p>&nbsp;</p>
 <table class=center>
-<tr class="hdr-row">
+<tr id="hdr-row" class="hdr-row" >
   <th class=name>Class</th>
   <th>Tests</th>
   <th>Not&nbsp;Run</th>
@@ -103,11 +96,11 @@ totalRow[0].style.background = "#2EB82E";}}
   <td>0</td>
   <td>0</td>
 </tr>
-<tr class="total-row">
+<tr id="total-row" class="total-row" >
   <td class=name>Total</td>
-  <td>8</td>
-  <td>0</td>
-  <td>0</td>
+  <td id='total'>8</td>
+  <td id='not-run'>0</td>
+  <td id='failures'>0</td>
 </tr>
 </table>
 <p>&nbsp;</p>
